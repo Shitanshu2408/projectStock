@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        background-color: #a5e49b;
+        color: #fff;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav li {
+        text-decoration: none;
+        color: white;
+        display: inline;
+        margin-right: 20px;
+        font-size: 18px;
+      }
+
+      .nav li:hover {
+        color: rgb(0, 0, 0);
+      }
+
+      .logo {
+        color: blueviolet;
+        font-size: 24px;
+        color: #fff;
+        margin-left: 20px;
+      }
+
+      .search {
+        color: blueviolet;
+        background-color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .card {
+        background-color: #a5e49b;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .headline-news {
+        flex: 1;
+        margin-top: 20px; /* Add margin for separation on larger screens */
+      }
+
+      .headline-card {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .headline-card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .headline-card a {
+        color: blueviolet;
+        text-decoration: none;
+      }
+
+      .headline-card a:hover {
+        text-decoration: underline;
+      }
+
+      .categories {
+        background-color: #f0f0f0;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        grid-column: 3;
+       
+      }
+
+      .category-link {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #333;
+      }
+
+      .nav ul {
+        text-decoration: none;
+      }
+      /* Media Query for screens smaller than 768px (e.g., mobile screens) */
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+
+        .categories {
+          grid-column: 1;
+        }
+
+        .nav {
+          display: none; /* Hide the navigation links on small screens */
+        }
+
+        .search {
+          margin-right: 0; /* Remove margin on small screens */
+        }
+      }
+      
+
+      h3 {
+        text-align: center;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #0074cc;
+        color: #fff;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="class">
+      <div class="navbar">
+        <div class="logo">NAME</div>
+        <div class="nav">
+          <ul class="nav">
+            <li>
+              <a href="../indices/indices.html">INDICES</a>
+            </li>
+            <li>
+              <a href="../stocks/stocks.html">STOCKS</a>
+            </li>
+            <li>
+              <a href="#">IPOS</a>
+            </li>
+            <li><a href="#">CONSOLE</a></li>
+          </ul>
+        </div>
+        <button class="search">Search</button>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <h3>TOP GAINERS</h3>
+          <div class="gainer">
+            <ul class="gainer">
+              <li>
+                <a href="../gainers/tcs.html">TCS</a>
+              </li>
+              <li>
+                <a href="../gainers/ongc.html">ONGC</a>
+              </li>
+              <li>
+                <a href="#">BERGEPAINT</a>
+              </li>
+              <li>
+                <a href="#">RELIANCE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card"><h3>COMODITIES</h3></div>
+        <div class="card">
+          <h3>TOP LOSERS</h3>
+          <div class="loser">
+            <ul class="loser">
+              <li>
+                <a href="../losers/airtel.html">BHARTIARTL</a>
+              </li>
+              <li>
+                <a href="../losers/cipla.html">CIPLA</a>
+              </li>
+              <li>
+                <a href="#">HINDALCO</a>
+              </li>
+              <li>
+                <a href="#">DRREDDY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="headline-news">
+          <h2>Sharp selling in the market</h2>
+          <div class="headline-card">
+            <img src="../images/marketImage.jpg" alt="Headline 1 Image" />
+            Market closed at 200 points low due to the 3rd quater results of
+            power sector.
+            <a
+              href="#"
+              >Read more</a
+            >
+          </div>
+          <div class="headline-card">
+            <img src="../images/TCS-Logo.webp" alt="Headline 2 Image" />
+            TCS add 2% as co fixes record date for buyback; should you buy
+            shares now?
+            <a
+            href="#"
+              >Read more</a
+            >
+          </div>
+          <div class="headline-card">
+            <img src="../images/lic-new-1.webp" alt="Headline 3 Image" />
+            LIC IPO economics titled towards investors, maybe a bummer for
+            policy holders.
+            <a
+            href="#"
+              >Read more</a
+            >
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="categories">
+        <h2>Categories</h2>
+        <a class="category-link" href="#">Pharma</a>
+        <a class="category-link" href="#">Metals</a>
+        <a class="category-link" href="#">FMCG</a>
+        <a class="category-link" href="#">Automobile</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Mr. Shitanshu Badwaik</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOCKS</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px; /* Set a maximum width for the table */
+            margin: 0 auto; /* Center the table horizontally */
+            margin-top: 20px; /* Adjusted margin-top for better appearance */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            color: blueviolet;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #a5e49b;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a:hover{
+            color: blueviolet;
+        }
+
+        .navbar a {
+            font-family: Arial, sans-serif;
+            float: left;
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Scrolling Text Styles */
+        .scrolling-text {
+            margin-top: 30px;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            background-color: #a5e49b;
+            color: white;
+        }
+
+        .scrolling-text p {
+            animation: scroll 10s linear infinite;
+            margin: 0;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        @media (max-width: 768px) {
+            .navbar a {
+                font-size: 20px;
+            }
+
+            .scrolling-text {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <div class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <tr>
+                <th>COMPANY</th>
+                <th>CURRENT</th>
+                <th>%CHNG</th>
+                <th>OPEN</th>
+                <th>HIGH</th>
+                <th>LOW</th>
+                <th>P.CLOSE</th>
+                <th>P.DAY</th>
+                <th>52W HIGH</th>
+                <th>52W LOW</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Repeat the following row for as many rows as needed -->
+            <tr>
+                <td>RELIANCE</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+            </tr>
+            <tr>
+                <td>TCS</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+            </tr>
+            <tr>
+                <td>INFY</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+            </tr>
+            <tr>
+                <td>SBI</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+            </tr>
+            <tr>
+                <td>HDFC</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+            </tr>
+            <tr>
+                <td>TECHM</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+            </tr>
+            <tr>
+                <td>CIPLA</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+            </tr>
+            <tr>
+                <td>MRF</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+            </tr>
+             <tr>
+                <td>KOTAKBNK</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+            </tr>
+            <tr>
+                <td>HDFC</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+            </tr>
+            <tr>
+                <td>ITC</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+            </tr>
+
+           
+            <!-- End of repeated row -->
+        </tbody>
+    </table>
+
+    <div class="scrolling-text">
+        <p>This is a scrolling text that moves from right to left. This is a scrolling text that moves from right to left.</p>
+    </div>
+</body>
+</html>
+
